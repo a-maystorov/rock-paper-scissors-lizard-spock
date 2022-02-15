@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div id="rules" class="rules d-none">
+      <p>Rules</p>
+      <img
+        src="images/image-rules-bonus.svg"
+        alt="image showing the game rules"
+      />
+      <button id="close--rules">X</button>
+    </div>
+    <header id="header" class="container">
+      <div class="header__content">
+        <div class="logo-container">
+          <img
+            src="../images/logo-bonus.svg"
+            alt="rock paper scissors lizard spock logo"
+          />
+        </div>
+        <div class="score-container">
+          <div class="score__content">
+            <p>score<span id="score"></span></p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="main" class="container">
+      <div class="main__content d-grid">
+        <button class="btn rock" value="rock" data-selected="false">
+          <div class="icon-wrapper">
+            <img
+              src="../images/icon-rock.svg"
+              alt="image of a rock shaped hand"
+              class="icon"
+            />
+          </div>
+        </button>
+        <button class="btn paper" value="paper" data-selected="false">
+          <div class="icon-wrapper">
+            <img
+              src="../images/icon-paper.svg"
+              alt="image of a paper shaped hand"
+              class="icon"
+            />
+          </div>
+        </button>
+        <button class="btn scissors" value="scissors" data-selected="false">
+          <div class="icon-wrapper">
+            <img
+              src="../images/icon-scissors.svg"
+              alt="image of a scissors shaped hand"
+              class="icon"
+            />
+          </div>
+        </button>
+        <button class="btn lizard" value="lizard" data-selected="false">
+          <div class="icon-wrapper">
+            <img
+              src="../images/icon-lizard.svg"
+              alt="image of a lizard"
+              class="icon"
+            />
+          </div>
+        </button>
+        <button class="btn spock" value="spock" data-selected="false">
+          <div class="icon-wrapper">
+            <img
+              src="../images/icon-spock.svg"
+              alt="image of a spock shaped hand"
+              class="icon"
+            />
+          </div>
+        </button>
+      </div>
+      <div class="main__content--results d-none">
+        <div class="player">
+          <button class="btn d-none">
+            <div class="icon-wrapper">
+              <img
+                src="../images/icon-rock.svg"
+                alt="image of your choice"
+                class="icon"
+                id="choice--icon"
+              />
+            </div>
+          </button>
+          <p>You picked</p>
+        </div>
+        <div class="house">
+          <button class="btn d-none">
+            <div class="icon-wrapper">
+              <img
+                src="../images/icon-spock.svg"
+                alt="image of house choice"
+                class="icon"
+              />
+            </div>
+          </button>
+          <p>The house picked</p>
+        </div>
+        <div class="result d-flex">
+          <p id="result">You Win</p>
+          <button id="new-game">Play Again</button>
+        </div>
+      </div>
+    </main>
+    <footer id="footer">
+      <button id="open--rules" class="btn--rules">Rules</button>
+    </footer>
+  </body>
+</html>
