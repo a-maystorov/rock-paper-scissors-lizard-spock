@@ -94,12 +94,12 @@ for (const choice of choices) {
       // Player
       playerChoice.classList.remove('d-none');
       playerChoice.classList.add(this.value);
-      playerChoiceIcon.src = `../images/icon-${this.value}.svg`;
+      playerChoiceIcon.src = `images/icon-${this.value}.svg`;
 
       // House
       houseValue.classList.remove('d-none');
       houseValue.classList.add(houseChoice.value);
-      houseChoiceIcon.src = `../images/icon-${houseChoice.value}.svg`;
+      houseChoiceIcon.src = `images/icon-${houseChoice.value}.svg`;
 
       // Compare choices
       declareWinner(this.value, houseChoice.value);
