@@ -51,8 +51,8 @@ Users should be able to:
 
 ### What I learned
 
-The design for this project was a little bit tricky, mainly the pentagon shape of the choices and since the background image provided was not a perfect shape it meant that I will be doing alot of transforming of the Y and X axis for the choice button elements,
-at least that was the first thing that came to my mind, but the main problem I faced was the layout of the choice elements themselves and how would I place them in a pentagon shape. I tried flexbox initially, turns out it is possible but I didnt want to waste most of my hairline on this project alone. Thankfully `grid-template-areas` came to the rescue, basically cut my code solution by 60% and even solved my layout issues for the tablet and desktop views in the rules section and the results section.
+The design for this project was a little bit tricky, mainly the pentagon shape of the choices and since the background image provided was not a perfect shape, it meant that I would be doing a lot of transforming of the Y and X-axis for the choice button elements,
+at least that was the first thing that came to my mind. Still, the main problem I faced was the layout of the choice elements themselves and how I would place them in a pentagon shape. I tried flexbox initially, turns out it is possible, but I didn't want to waste most of my hairline on this project alone. Thankfully, `grid-template-areas` came to the rescue, cut my code solution by 60%, and even solved my layout issues for the tablet and desktop views in the rules and results sections.
 
 Here are some code snippets of my use of grid-template-areas:
 
@@ -92,7 +92,7 @@ Here are some code snippets of my use of grid-template-areas:
 
 - [Understanding Grid Template Areas](https://www.smashingmagazine.com/understanding-css-grid-template-areas/):
 
-  - This is an amazing read by Rachel Andrew covering G-T-A in detail which helped me alot duruing this project. I think it's definitely worth the read if you want to dive deep into this topic.
+  - This article is a fantastic read by Rachel Andrew covering G-T-A in detail, which helped me immensely during this project. I think it's definitely worth the read if you want to dive deep into this topic.
 
 ## Author
 
