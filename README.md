@@ -98,4 +98,4 @@ Here are some code snippets of my use of grid-template-areas:
 
 - LinkedIn - [Alkin Maystorov](https://www.linkedin.com/in/alkin-maystorov/)
 - Frontend Mentor - [@SirDev97](https://www.frontendmentor.io/profile/SirDev97)
-- Website - [Alkin Maystorov](https://www.alkinmaystorov.com)
+- Website - [alkinmaystorov.com](https://www.alkinmaystorov.com)
