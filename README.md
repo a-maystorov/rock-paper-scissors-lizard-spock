@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Repo](https://github.com/SirDev97/rock-paper-scissors-lizard-spock)
-- Live Site URL: [Github Pages](https://sirdev97.github.io/rock-paper-scissors-lizard-spock/)
+- Solution URL: [Github Repo](https://github.com/a-maystorov/rock-paper-scissors-lizard-spock)
+- Live Site URL: [Github Pages](https://a-maystorov.github.io/rock-paper-scissors-lizard-spock/)
 
 ## My process
 
