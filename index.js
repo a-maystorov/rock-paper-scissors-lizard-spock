@@ -26,57 +26,42 @@ scoreText.innerText = score;
 if (scoreText.innerText === '') scoreText.innerText = 0;
 
 // Compare choices, declare winner and save score in localStorage
-const declareWinner = (yourChoice, houseChoice) => {
-  const player = playerChoice;
-  const house = houseValue;
+const results = {
+  rock: { name: 'Rock', defeats: ['scissors', 'lizard'] },
+  paper: { name: 'Paper', defeats: ['rock', 'spock'] },
+  scissors: { name: 'Scissors', defeats: ['paper', 'lizard'] },
+  lizard: { name: 'Lizard', defeats: ['paper', 'spock'] },
+  spock: { name: 'Spock', defeats: ['scissors', 'rock'] },
+};
 
-  switch (yourChoice + ' ' + houseChoice) {
-    case 'scissors paper':
-    case 'rock scissors':
-    case 'paper rock':
-    case 'lizard paper':
-    case 'spock scissors':
-    case 'rock lizard':
-    case 'paper spock':
-    case 'spock rock':
-    case 'scissors lizard':
-    case 'lizard spock':
+const declareWinner = (yourChoice, houseChoice) => {
+  if (houseChoice == yourChoice) {
+    score += 0;
+    localStorage.setItem('score', score);
+    house.classList.remove('winner');
+    player.classList.remove('winner');
+    result.innerText = 'Draw';
+    scoreText.innerText = score;
+  } else {
+    yourChoice = results[yourChoice];
+
+    const victory = yourChoice.defeats.indexOf(houseChoice) > -1;
+
+    if (victory) {
       ++score;
       localStorage.setItem('score', score);
       house.classList.remove('winner');
       player.classList.add('winner');
       result.innerText = 'You Win';
       scoreText.innerText = score;
-      break;
-    case 'paper scissors':
-    case 'scissors rock':
-    case 'rock paper':
-    case 'paper lizard':
-    case 'scissors spock':
-    case 'lizard rock':
-    case 'spock paper':
-    case 'rock spock':
-    case 'lizard scissors':
-    case 'spock lizard':
-      --score;
+    } else {
+      if (score > 0) --score;
       localStorage.setItem('score', score);
       house.classList.add('winner');
       player.classList.remove('winner');
       result.innerText = 'You Lose';
       scoreText.innerText = score;
-      break;
-    case 'rock rock':
-    case 'paper paper':
-    case 'scissors scissors':
-    case 'lizard lizard':
-    case 'spock spock':
-      score += 0;
-      localStorage.setItem('score', score);
-      house.classList.remove('winner');
-      player.classList.remove('winner');
-      result.innerText = 'Draw';
-      scoreText.innerText = score;
-      break;
+    }
   }
 };
 
